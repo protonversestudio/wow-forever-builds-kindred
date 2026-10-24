@@ -1,0 +1,9 @@
+repository:
+  name: wow-forever-builds-kindred
+  description: Answer four questions and see which WoW Forever class fits how you play. Free Windows app.
+  homepage: https://kindredwow.lol
+  topics: ["wow", "talent-builds", "leveling", "windows", "free"]
+  private: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
