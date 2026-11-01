@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kindred answers",
+  "type": "object",
+  "required": ["solo", "speed", "risk", "active"],
+  "properties": {
+    "solo":   { "type": "integer", "minimum": 0, "maximum": 2 },
+    "speed":  { "type": "integer", "minimum": 0, "maximum": 2 },
+    "risk":   { "type": "integer", "minimum": 0, "maximum": 2 },
+    "active": { "type": "integer", "minimum": 0, "maximum": 2 }
+  }
+}
