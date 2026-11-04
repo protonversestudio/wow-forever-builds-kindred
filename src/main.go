@@ -16,13 +16,14 @@ type Answers struct {
 }
 
 type Class struct {
-	ID    string  `json:"id"`
-	Name  string  `json:"name"`
-	Color string  `json:"color"`
-	Solo  []int   `json:"solo"`
-	Speed []int   `json:"speed"`
-	Risk  []int   `json:"risk"`
-	Base  float64 `json:"base"`
+	ID     string  `json:"id"`
+	Name   string  `json:"name"`
+	Color  string  `json:"color"`
+	Solo   []int   `json:"solo"`
+	Speed  []int   `json:"speed"`
+	Risk   []int   `json:"risk"`
+	Calm   []int   `json:"calm"`
+	Base   float64 `json:"base"`
 }
 
 type Ranked struct {
@@ -33,15 +34,15 @@ type Ranked struct {
 }
 
 var classes = []Class{
-	{"warrior", "Warrior", "#C79C6E", []int{2, 1, 0}, []int{0, 1, 2}, []int{0, 1, 2}, 6.2},
-	{"paladin", "Paladin", "#F58CBA", []int{2, 2, 1}, []int{0, 1, 1}, []int{0, 0, 1}, 6.4},
-	{"hunter", "Hunter", "#ABD473", []int{2, 2, 1}, []int{2, 2, 2}, []int{1, 1, 2}, 7.6},
-	{"rogue", "Rogue", "#FFF569", []int{2, 0, 0}, []int{2, 2, 1}, []int{2, 2, 2}, 6.0},
-	{"priest", "Priest", "#FFFFFF", []int{1, 1, 2}, []int{0, 1, 1}, []int{0, 0, 0}, 6.8},
-	{"shaman", "Shaman", "#0070DE", []int{1, 2, 2}, []int{1, 1, 2}, []int{1, 1, 1}, 7.0},
-	{"mage", "Mage", "#69CCF0", []int{2, 1, 2}, []int{2, 2, 2}, []int{2, 2, 1}, 7.4},
-	{"warlock", "Warlock", "#9482C9", []int{2, 2, 2}, []int{1, 2, 2}, []int{2, 2, 1}, 7.2},
-	{"druid", "Druid", "#FF7D0A", []int{2, 2, 2}, []int{1, 2, 2}, []int{1, 1, 2}, 7.0},
+	{"warrior", "Warrior", "#C79C6E", []int{2, 1, 0}, []int{0, 1, 2}, []int{0, 1, 2}, []int{0, 1, 2}, 6.2},
+	{"paladin", "Paladin", "#F58CBA", []int{2, 2, 1}, []int{0, 1, 1}, []int{0, 0, 1}, []int{1, 1, 2}, 6.4},
+	{"hunter", "Hunter", "#ABD473", []int{2, 2, 1}, []int{2, 2, 2}, []int{1, 1, 2}, []int{2, 2, 1}, 7.6},
+	{"rogue", "Rogue", "#FFF569", []int{2, 0, 0}, []int{2, 2, 1}, []int{2, 2, 2}, []int{0, 1, 2}, 6.0},
+	{"priest", "Priest", "#FFFFFF", []int{1, 1, 2}, []int{0, 1, 1}, []int{0, 0, 0}, []int{1, 2, 2}, 6.8},
+	{"shaman", "Shaman", "#0070DE", []int{1, 2, 2}, []int{1, 1, 2}, []int{1, 1, 1}, []int{1, 1, 1}, 7.0},
+	{"mage", "Mage", "#69CCF0", []int{2, 1, 2}, []int{2, 2, 2}, []int{2, 2, 1}, []int{2, 2, 0}, 7.4},
+	{"warlock", "Warlock", "#9482C9", []int{2, 2, 2}, []int{1, 2, 2}, []int{2, 2, 1}, []int{2, 2, 1}, 7.2},
+	{"druid", "Druid", "#FF7D0A", []int{2, 2, 2}, []int{1, 2, 2}, []int{1, 1, 2}, []int{1, 2, 2}, 7.0},
 }
 
 func rank(a Answers) []Ranked {
